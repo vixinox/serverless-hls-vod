@@ -1,8 +1,7 @@
 'use server'
-
-import prisma from "@/lib/db/prisma";
+import { prisma } from "@/lib/db/prisma";
 import { auth } from "@/lib/auth";
-import { ReactionType } from "@prisma/client";
+import { ReactionType } from "@/../prisma/generated/prisma/client";
 import { redirect } from "next/navigation";
 
 export type ReplyCursor = {

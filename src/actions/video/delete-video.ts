@@ -1,8 +1,7 @@
 'use server'
 
 import { auth } from "@/lib/auth";
-import { redirect } from "next/navigation";
-import prisma from "@/lib/db/prisma";
+import { redirect } from "next/navigation";import { prisma } from "@/lib/db/prisma";
 import checkVideoOwnerByShortCode from "@/actions/video/check-video-owner";
 
 export async function deleteVideo(shortCode: string) {

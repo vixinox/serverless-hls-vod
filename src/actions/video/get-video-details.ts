@@ -1,7 +1,6 @@
 'use server'
 
-import { auth } from "@/lib/auth";
-import prisma from "@/lib/db/prisma";
+import { auth } from "@/lib/auth";import { prisma } from "@/lib/db/prisma";
 import { notFound, redirect } from "next/navigation";
 import checkVideoOwnerByShortCode from "@/actions/video/check-video-owner";
 

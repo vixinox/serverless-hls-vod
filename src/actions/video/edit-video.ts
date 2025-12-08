@@ -2,8 +2,8 @@
 
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import prisma from "@/lib/db/prisma";
-import { Visibility } from "@prisma/client";
+import { prisma } from "@/lib/db/prisma";
+import { Visibility } from "@/../prisma/generated/prisma/client";
 import * as z from "zod";
 import checkVideoOwnerByShortCode from "@/actions/video/check-video-owner";
 

@@ -34,7 +34,7 @@ export function UploadStep({
 
       <div
         className={cn(
-          "w-34 h-34 p-10 rounded-full bg-studio-background brightness-[80%] border-2 transition",
+          "w-34 h-34 p-10 rounded-full bg-studio-background brightness-80 border-2 transition",
           isDragActive ? "border-blue-500" : "border-transparent",
           isUploading ? "opacity-50 cursor-not-allowed" : "opacity-100 cursor-pointer"
         )}

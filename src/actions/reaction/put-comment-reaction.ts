@@ -1,9 +1,9 @@
 'use server'
 
 import { auth } from "@/lib/auth";
-import prisma from "@/lib/db/prisma";
+import { prisma } from "@/lib/db/prisma";
 import { redirect } from "next/navigation";
-import type { ReactionType } from "@prisma/client";
+import type { ReactionType } from "@/../prisma/generated/prisma/client";
 
 export async function putCommentReaction(commentId: string, reactionType?: ReactionType) {
   const session = await auth();

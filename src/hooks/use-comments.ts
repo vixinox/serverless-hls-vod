@@ -4,7 +4,7 @@ import { submitComment } from "@/actions/comment/submit-comment";
 import { deleteComment } from "@/actions/comment/delete-comment";
 import { editComment } from "@/actions/comment/edit-comment";
 import { CommentData, getComments, NextCursor } from '@/actions/comment/get-comments';
-import { ReactionType } from "@prisma/client";
+import { ReactionType } from "@/../prisma/generated/prisma/client";
 import { putCommentReaction } from "@/actions/reaction/put-comment-reaction";
 import { redirect } from "next/navigation";
 import { submitReply } from "@/actions/comment/submit-reply";

@@ -1,6 +1,4 @@
-'use server'
-
-import prisma from "@/lib/db/prisma";
+'use server'import { prisma } from "@/lib/db/prisma";
 import { notFound } from "next/navigation";
 import { auth } from "@/lib/auth";
 

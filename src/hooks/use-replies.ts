@@ -5,7 +5,7 @@ import { useSession } from 'next-auth/react';
 import { submitReply } from '@/actions/comment/submit-reply';
 import { deleteComment } from '@/actions/comment/delete-comment';
 import { editComment } from '@/actions/comment/edit-comment';
-import { ReactionType } from "@prisma/client";
+import { ReactionType } from "@/../prisma/generated/prisma/client";
 import { putReplyReaction } from "@/actions/reaction/put-reply-reaction";
 import { redirect } from "next/navigation";
 

@@ -1,9 +1,9 @@
 "use server";
 
 import { auth } from "@/lib/auth";
-import prisma from "@/lib/db/prisma";
+import { prisma } from "@/lib/db/prisma";
 import { redirect } from "next/navigation";
-import { Prisma, Visibility } from "@prisma/client";
+import { Prisma, Visibility } from "@/../prisma/generated/prisma/client";
 
 interface ListUserVideosParams {
   page: number;

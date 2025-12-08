@@ -5,7 +5,7 @@ import { CommentActions } from "@/components/comment/comment-actions";
 import { ReplyData } from "@/actions/comment/get-replies";
 import { useState } from "react";
 import { CommentTextarea } from "@/components/comment/comment-textarea";
-import { ReactionType } from "@prisma/client";
+import { ReactionType } from "@/../prisma/generated/prisma/client";
 
 interface ReplyProps {
   data: ReplyData;

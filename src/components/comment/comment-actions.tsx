@@ -2,9 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { EllipsisVertical, Flag, PencilLine, ThumbsDown, ThumbsUp, Trash2 } from "lucide-react";
-import { ReactionType } from "@prisma/client";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { useSession } from "next-auth/react";
+import { ReactionType } from "../../../prisma/generated/prisma/enums";
 
 interface CommentActionsProps {
   userId: string;

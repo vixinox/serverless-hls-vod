@@ -70,7 +70,7 @@ export const CommentTextarea = memo(function CommentTextarea({
         <Skeleton className="rounded-full size-10"/>
         <div className="space-y-2">
           <Skeleton className="h-4 w-32"/>
-          <Skeleton className="h-2 w-128"/>
+          <Skeleton className="h-2 w-lg"/>
         </div>
       </div>
     );
@@ -105,7 +105,7 @@ export const CommentTextarea = memo(function CommentTextarea({
           />
 
           <div
-            className={clsx('absolute -bottom-1.5 h-[1px] bg-border rounded-full',
+            className={clsx('absolute -bottom-1.5 h-px bg-border rounded-full',
               mode === 'reply' ? 'w-[97%]' : 'w-[99%]'
             )}
           />

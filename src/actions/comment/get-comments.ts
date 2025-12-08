@@ -1,8 +1,8 @@
 'use server';
-import prisma from "@/lib/db/prisma";
+import { prisma } from "@/lib/db/prisma";
 import { notFound } from "next/navigation";
 import { auth } from "@/lib/auth";
-import { Prisma, ReactionType } from "@prisma/client";
+import { Prisma, ReactionType } from "@/../prisma/generated/prisma/client";
 
 export type NextCursor = {
   id: string;

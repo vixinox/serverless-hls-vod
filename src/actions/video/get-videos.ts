@@ -1,7 +1,4 @@
-'use server'
-
-import prisma from "@/lib/db/prisma";
-
+'use server'import { prisma } from "@/lib/db/prisma";
 export async function getVideos() {
   const videos = await prisma.video.findMany({
     where: {

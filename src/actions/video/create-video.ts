@@ -1,9 +1,7 @@
 'use server'
 
 import { auth } from "@/lib/auth";
-import { redirect } from "next/navigation";
-import prisma from "@/lib/db/prisma";
-
+import { redirect } from "next/navigation";import { prisma } from "@/lib/db/prisma";
 export async function createVideo(filename: string, shortCode: string) {
   const session = await auth();
   if (!session?.user?.id) {

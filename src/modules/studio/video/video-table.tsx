@@ -4,7 +4,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChartColumn, MessageSquareText, Pencil, RotateCw, ThumbsDown, ThumbsUp, TvMinimalPlay } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { Category, Video } from "@prisma/client";
+import { Category, Video } from "@/../prisma/generated/prisma/client";
 import { listUserVideos } from "@/actions/video/list-user-videos";
 import { SmartImage } from "@/components/smart-image";
 import {
@@ -196,7 +196,7 @@ export const VideoTable = () => {
     <div className="relative overflow-y-auto w-full max-h-screen">
       <div className="flex items-center w-full h-12 sticky top-0 z-20 border-y bg-studio-background">
         {loading && (
-          <div className="absolute top-0 left-0 w-full h-[2px] overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-0.5 overflow-hidden">
             <div className="h-full bg-red-500 animate-loading-bar"/>
           </div>
         )}
@@ -235,9 +235,9 @@ export const VideoTable = () => {
             const ratio = calcLikeRatio(Number(video.likesCount), Number(video.dislikesCount));
             return (
               <TableRow key={video.shortCode} className="group hover:bg-hover-dark duration-50">
-                <TableCell className="pl-6 min-w-112">
+                <TableCell className="pl-6 min-w-md">
                   <div className="flex items-center gap-3">
-                    <div className="relative w-32 h-18 flex-shrink-0 rounded-lg border overflow-hidden">
+                    <div className="relative w-32 h-18 shrink-0 rounded-lg border overflow-hidden">
                       <SmartImage
                         src={video.thumbnail}
                         alt={video.title}

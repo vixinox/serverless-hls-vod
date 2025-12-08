@@ -2,7 +2,7 @@
 
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import prisma from "@/lib/db/prisma";
+import { prisma } from "@/lib/db/prisma";
 
 export async function deleteComment(id: string, type: "comment" | "reply") {
   const session = await auth();

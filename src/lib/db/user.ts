@@ -1,5 +1,4 @@
-import prisma from "@/lib/db/prisma";
-
+import { prisma } from "@/lib/db/prisma";
 export async function getUserByEmail(email: string) {
   return prisma.user.findUnique({ where: { email } });
 }

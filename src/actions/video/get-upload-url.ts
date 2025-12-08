@@ -5,9 +5,7 @@ import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import path from "path";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import { generateShortCode } from "@/lib/shortcode";
-import prisma from "@/lib/db/prisma";
-
+import { generateShortCode } from "@/lib/shortcode";import { prisma } from "@/lib/db/prisma";
 function createS3Client() {
   return new S3Client({
     region: process.env.AWS_REGION,

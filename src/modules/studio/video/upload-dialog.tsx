@@ -6,7 +6,7 @@ import { X } from "lucide-react";
 import { FileRejection, useDropzone } from 'react-dropzone';
 import { UploadStep } from "@/modules/studio/video/upload-step";
 import { VideoForm } from "@/modules/studio/video/video-form";
-import { Video } from "@prisma/client";
+import { Video } from "@/../prisma/generated/prisma/client";
 import { createVideo } from "@/actions/video/create-video";
 import { toast } from "sonner";
 import { getVideoUploadUrl } from "@/actions/video/get-upload-url";

@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactionType } from "@prisma/client";
+import { ReactionType } from "@/../prisma/generated/prisma/client";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -42,7 +42,7 @@ export function VideoActionButtons({ videoId, likesCount, prevReaction }: VideoA
         <TooltipContent side="bottom">喜欢</TooltipContent>
       </Tooltip>
 
-      <div className="w-[1px] h-9 bg-foreground/30"/>
+      <div className="w-px h-9 bg-foreground/30"/>
 
       <Tooltip>
         <TooltipTrigger asChild>

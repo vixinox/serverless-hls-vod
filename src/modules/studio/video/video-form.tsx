@@ -14,7 +14,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import { Visibility } from "@prisma/client";
+import { Visibility } from "@/../prisma/generated/prisma/client";
 import { editVideo } from "@/actions/video/edit-video";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";

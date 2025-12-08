@@ -1,7 +1,4 @@
-'use server'
-
-import prisma from "@/lib/db/prisma";
-
+'use server'import { prisma } from "@/lib/db/prisma";
 export default async function checkVideoOwnerByShortCode(shortCode: string, userId: string) {
   const video = await prisma.video.findUnique({
     select: { id: true, channelId: true, deletedAt: true },

@@ -58,7 +58,7 @@ export function CommentContent({
             className="w-full outline-none resize-none overflow-hidden peer text-sm"
           />
             <div
-              className={clsx('absolute -bottom-1.5 h-[1px] bg-border rounded-full',
+              className={clsx('absolute -bottom-1.5 h-px bg-border rounded-full',
                 size === 'small' ? 'w-[97%]' : 'w-[99%]'
               )}
             />

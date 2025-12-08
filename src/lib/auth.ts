@@ -2,13 +2,13 @@ import NextAuth, { customFetch } from "next-auth";
 import GitHub from "next-auth/providers/github";
 import Credentials from "next-auth/providers/credentials";
 import { PrismaAdapter } from "@auth/prisma-adapter";
-import prisma from "@/lib/db/prisma";
+import { prisma } from "@/lib/db/prisma";
 import { getUserByEmail } from "@/lib/db/db";
 import { verifyPassword } from "@/lib/password";
 import { decode, encode } from "next-auth/jwt";
 import { HttpsProxyAgent } from "https-proxy-agent";
 import { generateShortCode } from "@/lib/shortcode";
-import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
+import { PrismaClientKnownRequestError } from "@prisma/client/runtime/client";
 
 const proxyUrl = process.env.HTTPS_PROXY;
 const proxyAgent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
